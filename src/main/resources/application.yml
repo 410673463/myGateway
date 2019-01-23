@@ -1,0 +1,11 @@
+server:
+  port: 6677
+
+spring:
+  cloud:
+    gateway:
+      routes:
+        - id: test
+          uri: http://39.107.89.50
+          predicates:
+          - Path=/**
